@@ -16,7 +16,6 @@ Finalmente, genera un correo personalizado en formato `.eml`, simulando su enví
 - pandas
 - requests
 - python-dotenv
-- pytest
 - GNews API
 
 ## Estructura del proyecto
@@ -32,10 +31,6 @@ news_automation/
 │   ├── users.py
 │   ├── news.py
 │   └── email_service.py
-├── tests/
-│   ├── test_users.py
-│   ├── test_news.py
-│   └── test_email_service.py
 ├── emails/
 ├── .env.example
 ├── .gitignore
@@ -43,7 +38,7 @@ news_automation/
 └── README.md
 ```
 
-La carpeta `emails/` se crea automáticamente durante la ejecución y no se publica en el repositorio.
+La carpeta `emails/` se crea automáticamente durante la ejecución 
 
 ## Instalación
 
@@ -78,7 +73,6 @@ La carpeta `emails/` se crea automáticamente durante la ejecución y no se publ
    GNEWS_API_KEY=TU_API_KEY
    ```
 
-6. Colocar los archivos CSV requeridos en la carpeta `data/`.
 
 ## Ejecución
 
@@ -99,21 +93,11 @@ A continuación:
 5. Construye un correo personalizado.
 6. Guarda el mensaje en formato `.eml`.
 
-## Pruebas automatizadas
-
-Para ejecutar las pruebas:
-
-```bash
-python -m pytest -v
-```
-
-Se incluyen ocho pruebas para validar la búsqueda de usuarios, detección de duplicados, selección de noticias y personalización de correos.
 
 ## Seguridad
 
 - Las claves API se almacenan en `.env`.
 - `.env` no debe publicarse en GitHub.
-- Los correos generados se excluyen mediante `.gitignore`.
 - Los datos personales deben protegerse antes de publicar el repositorio.
 
 ## Limitaciones
@@ -128,4 +112,4 @@ Se incluyen ocho pruebas para validar la búsqueda de usuarios, detección de du
 - Integrar un proveedor de correo para realizar envíos reales.
 - Implementar análisis de sentimiento más avanzado.
 - Incorporar registros de ejecución y métricas.
-- Agregar pruebas de integración y simulaciones de errores de la API.
+
